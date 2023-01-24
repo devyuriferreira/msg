@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <style>
+        @media screen and (max-width: 600px) {
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+        button {
+            background-color: black;
+            color: white;
+            height: 50px;
+            padding: 15px;
+        }
+
+        .true {
+            background-color: black;
+            color: white;
+            height: 50px;
+            margin-left: 15rem;
+        }
+
+       
+        .text {
+            background-color: rgb(82, 82, 82);
+            color: white;
+            padding: 10px;   
+        }
+        
+       
+    }
+    @media screen and (min-width: 601px) {
+        button {
+            background-color: black;
+            color: white;
+            height: 50px;
+            margin-left: 39rem;
+            padding: 15px;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <button onclick="msg()">??????</button>
+    <div id="msg">
+
+    </div>
+    <script>
+ 
+        function msg () {
+            let nome = prompt('Digite seu Nome');
+            let p = document.createElement('p');
+            p.classList.toggle('text')
+            let div = document.querySelector('#msg');
+            p.innerText = `Oi, ${nome}!, o Yuri te deseja tudo de bom, incluindo ele, rsrsrs`;
+            div.appendChild(p);
+            let button = document.createElement('button');
+            button.type = button;
+            button.innerHTML = `??????`;
+            button.classList.add('.true');
+            div.appendChild(button)
+            button.addEventListener('click', function (){
+                let confirmar  = confirm('Deseja à Paris comigo?');
+                if (confirmar === true){
+                    alert('Eita, vamos comprar as passagens! :)');
+                } else {
+                    alert('Agora eu fiquei triste! :(');
+                }
+            });
+        }
+
+        function criaBotao () {
+          
+        }
+    </script>
+</body>
+</html>
