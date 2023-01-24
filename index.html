@@ -12,17 +12,21 @@
                 text-align: center;
             }
         button {
-            background-color: black;
+            background-color: rgb(36, 76, 184);
+            border: none;
+            box-shadow: 1px 1px 10px rgb(119, 119, 119);
             color: white;
             height: 50px;
             padding: 15px;
         }
 
         .true {
-            background-color: black;
+            background-color: rgb(36, 76, 184);
+            border: none;
+            box-shadow: 1px 1px 10px rgb(119, 119, 119);
             color: white;
             height: 50px;
-            margin-left: 15rem;
+            padding: 15px;
         }
 
        
@@ -47,7 +51,7 @@
     </style>
 </head>
 <body>
-    <button onclick="msg()">??????</button>
+    <button onclick="msg()">Clique aqui!</button>
     <div id="msg">
 
     </div>
@@ -62,11 +66,11 @@
             div.appendChild(p);
             let button = document.createElement('button');
             button.type = button;
-            button.innerHTML = `??????`;
+            button.innerHTML = `Clique aqui também!`;
             button.classList.add('.true');
             div.appendChild(button)
             button.addEventListener('click', function (){
-                let confirmar  = confirm('Deseja à Paris comigo?');
+                let confirmar  = confirm('Deseja ir à Paris comigo?');
                 if (confirmar === true){
                     alert('Eita, vamos comprar as passagens! :)');
                 } else {
